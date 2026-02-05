@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course REg form</title>
+  </head>
+  <body>
+    <h1>Course Registeration Form</h1>
+    <form action="" style="background-color: skyblue;">
+      <fieldset>
+        <legend>Personal Details</legend>
+      <table>
+      <tr><td><label for="fname">First Name</label>
+      <td><input type="text" name="fname"id="fname"placeholder="EX:Gowtham" required /><br /></td></td>
+      </tr>
+      <tr>
+        <td>
+      <label  for="sname">Surname</label></td>
+      <td><input type="text"name="sname"id="sname" placeholder="Ex:T" /><br></td>
+    </tr>
+      <tr>
+        <td><label for="mobnum">MObile Number</label></td>
+      <td><input type="tel" name="mobnum" id="mobnum"/><br /></td>
+    </tr>
+      <tr>
+        <td><label for="email">Email</label></td>
+      <td><input type="email" name="email" id="email"placeholder="gowtham@123" required /><br /></td>
+    </tr>
+      <tr>
+        <td><label for="passsword">passsword</label></td>
+      <td>      <input type="password" name="passsword" id="passsword" min="8" placeholder="min 8 characters" /><br /></td>
+    </tr>
+      <tr>
+        <td><label for="cpassword">Confirm passsword</label></td>
+      <td><input type="password" name="cpassword" id="cpassword" min="8" placeholder="min 8 characters" /><br /></td>
+    </tr>
+      <tr>
+        <td><label for="dob">DOB</label></td>
+      <td><input type="date" /><br /></td>
+    </tr>
+      <tr>
+        <td><label for="age">Age</label></td>
+      <td><input type="number" name="age" id="age" min="18" max="25" /><br /></td>
+    </tr>
+      <tr>
+        <td><label for="gender">Gender</label></td>
+      <td>
+      <input type="radio"  name="gender" id="gender"value="MALE" /><label>MALE</label>
+      <input type="radio" name="gender" id="gender"value="FEMALE" /><label >FEMALE</label>
+      <input type="radio" value="OTHERS" name="gender" id="gender" /><label >OTHERS</label><br></td>
+    </tr>
+      <tr>
+        <td><label for="scountry">Select Country</label></td>
+      <td><select name="country" id="country">
+        <option value="India">India</option>
+        <option value="Germany">Germany</option>
+        <option value="USA">USA</option>
+      </select><br></td>
+    </tr>
+      <tr>
+        <td><label for="upicture">Upload Picture</label></td>
+      <td><input type="file" name="upicture" id="upicture"><br></td>
+    </tr>
+      </table>
+    </fieldset><br>
+    
+    
+    <br>
+      <input type="reset">
+      <input type="submit">
+         
+         <br>
+         <br>
+         <br>
+       </form>
+
+        <form action="" style="background-color: skyblue;border:20px;">
+          <fieldset>
+            <legend>Course details</legend>
+          <table>
+            <tr>
+              <td> <label for="Select course"> Select course</label></td>
+              <td><select name="scourse" id="scourse">
+            <option value="JAVA Full Stack">JAVA Full Stack</option>
+            <option value="PYTHON">python</option>
+            <option value="WEb development">web development</option>
+          </select><br></td>
+            </tr>
+            <tr>
+              <td><label for="Delivery mode">Delivery mode</label></td>
+              <td>
+          <input type="radio" name="dmode" id="dmode" value="online" ><label for="online">online</label>
+          <input type="radio" name="dmode" id="dmode" value="offline"><label for="offline">offline</label>
+          <br></td>
+        
+            </tr>
+            <tr>
+              <td><label for="Iname"> Instution name</label></td>
+              <td><input type="text" name="Iname" id="Iname" value="TAP ACADEMY" readonly>
+          <br></td>
+            </tr>
+            <tr> 
+              <td><label for="comment">comments</label></td>
+              <td><textarea style="resize: none;" name="comment" id="comment" rows="5" cols="50"></textarea><br>
+          <br></td>
+            </tr>
+          </table>
+          </fieldset>
+          <br>
+           <input type="reset" value="clear Form"><br>
+           <br>
+        <input type="sumbit" value="sumbit Registeration">
+
+       </form>
+  </body>
+</html>
